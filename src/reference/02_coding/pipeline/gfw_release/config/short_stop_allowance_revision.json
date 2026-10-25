@@ -1,0 +1,35 @@
+{
+  "experiment": "E007",
+  "date_local": "2026-10-11",
+  "timezone": "Asia/Hong_Kong",
+  "proposal_accepted": "Change the possible-short-stop location allowance from one cell diagonal per sample (two per pair) to one cell diagonal per pair; record the direction of record-level changes and the exposure of quarantined versus retained voyages in the review README. Do not run the endpoint-bracket sensitivity in this round.",
+  "reason": "Cleaned GFW coordinates lie on the 0.01-degree grid. When both samples of a pair are binned by the same rule, the binned displacement differs from the true displacement by less than one cell in each axis, so by at most one cell diagonal. Subtracting one diagonal per sample doubled that allowance.",
+  "rule_before": "max(0, d - allowance_i - allowance_j) / (dt + 1 h) < 0.2 kn",
+  "rule_after": "max(0, d - max(allowance_i, allowance_j)) / (dt + 1 h) < 0.2 kn",
+  "review_probe": "Four shards (0005, 0009, 0020, 0041) reproduced stored visit flags and guard decisions exactly; with one diagonal, flagged visits fell from 9,107 to 6,277 and quarantined speed-eligible voyages from 9,469 to 7,711. R35 and R70 short-stop visits remain flagged.",
+  "unchanged": [
+    "all port_segmentation_revision.json rules other than the short-stop allowance",
+    "3/4 km, 0.2/0.5 kn and 4 h thresholds",
+    "+1 h timing allowance",
+    "candidate guard reasons",
+    "c2/c3",
+    "Option C 36 kn cap with +1 h",
+    "slow-side q99 0.04680512383582364",
+    "25 kn interpolation and weather bounds",
+    "ERA5/IBTrACS snapshots",
+    "release minimum 5 voyages",
+    "bootstrap B=1000 seed=20260923",
+    "nearshore wave-support correction"
+  ],
+  "reuse": "Visits, raw legs and pre-guard candidates must be identical apart from the possible_short_stop flag; the corrected flags must be a subset of the previous flags. Previously retained voyages keep their verified weather; only newly retained voyages are reused from an exact Option C physical twin or rebuilt.",
+  "not_authorized": [
+    "manuscript edits",
+    "formal adoption",
+    "merge",
+    "push",
+    "external sharing",
+    "new data-provider API requests",
+    "changes to historical snapshots or earlier run roots",
+    "Contract or Dashboard edits without a separate request"
+  ]
+}

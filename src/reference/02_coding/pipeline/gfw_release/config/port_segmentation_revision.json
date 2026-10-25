@@ -1,0 +1,56 @@
+{
+  "experiment": "E007",
+  "date_local": "2026-10-11",
+  "timezone": "Asia/Hong_Kong",
+  "scope": "Offline correction and validation of the diagnosed GFW port/voyage segmentation mechanisms, followed by rebuilding affected downstream results in new private runs. Existing annual products, incoming files, review forms and accepted analysis remain unchanged.",
+  "rules": {
+    "entry_radius_km": 3.0,
+    "exit_radius_km": 4.0,
+    "stop_speed_enter_kn": 0.2,
+    "stop_speed_exit_kn": 0.5,
+    "gap_hours": 4.0,
+    "grid_resolution_degrees": 0.01,
+    "nominal_entry": "Nearest reviewed catalog cell within 3 km.",
+    "stop_supported_entry": "An observed calculated-speed stop below 0.2 kn within the existing 4 km outer region may open an annulus-entry visit. Mark this separately; it is a GFW grid-supported stop, not proof of commercial berth use.",
+    "city_support": "An open visit uses the union of nearby cells in its corrected frozen analytical city; another city cannot donate a stop or AIS gap. Keep the opening cell if the nearest cell belongs to another city, and mark a stop with conflicting nearest-city support as ambiguous.",
+    "stop_region": "Stop transitions apply throughout the open 4 km city-supported visit.",
+    "gap_evidence": "Only a gap between consecutive AIS samples, with both samples in the same open city-supported visit, counts. Returning after continuously observed movement is not an AIS gap.",
+    "exit_reentry": "After closing a visit, re-evaluate the same AIS sample for entry into the next visit.",
+    "boundary_uncertainty": "Store bracketing AIS times. Entry/exit brackets of at least 4 h are unresolved boundaries, not exact arrival/departure times.",
+    "short_stop_uncertainty": "A closed low-confidence visit with at least two in-region observations and a quantization-consistent possible stop is unresolved. Use the full 0.01-degree-cell diagonal as a conservative location allowance because reported coordinates are not assumed to be cell centres. Do not manufacture a confirmed stop.",
+    "candidate_guard": "Quarantine candidates with unresolved origin departure or destination arrival, ambiguous endpoint city, or unresolved intermediate visits in a different city. Retain the reason and full pre-guard denominator.",
+    "source_motion_guard": "Quarantine voyages containing an adjacent observed point pair requiring more than the existing 36 kn fast cap even with +1 h timing allowance; do not guess which point is bad."
+  },
+  "unchanged": [
+    "frozen cleaned 2025 GFW points and roster",
+    "catalog and T034/T035 city decisions",
+    "c2/c3",
+    "Option C 36 kn cap with +1 h",
+    "slow-side q99 0.04680512383582364",
+    "25 kn interpolation and weather bounds",
+    "ERA5/IBTrACS snapshots",
+    "release minimum 5 voyages",
+    "bootstrap B=1000 seed=20260923",
+    "previous nearshore wave-support correction"
+  ],
+  "validation": [
+    "regressions for every changed state transition and guards",
+    "frozen 16 priority source cases including unresolved cases",
+    "serial/parallel exact comparison",
+    "annual row/vessel/candidate closure and source hashes",
+    "dense AIS reference statistics reported with missing and ambiguous categories, not commercial-port accuracy"
+  ],
+  "method_references": [
+    "https://globalfishingwatch.org/datasets-and-code-anchorages/",
+    "https://globalfishingwatch.org/our-apis/documentation/docs/v3/4wings/report"
+  ],
+  "not_authorized": [
+    "manuscript edits",
+    "formal adoption",
+    "merge",
+    "push",
+    "external sharing",
+    "new data-provider API requests",
+    "changes to historical snapshots"
+  ]
+}

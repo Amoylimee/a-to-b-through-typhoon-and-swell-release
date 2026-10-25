@@ -1,0 +1,59 @@
+{
+  "revision": "E007 speed-filter revision (option C)",
+  "date_local": "2026-10-09",
+  "timezone": "Asia/Hong_Kong",
+  "applies_to": "GFW version only: the annual q-trim of E006 step 3, and every downstream step that reads the retained voyage set (step 6 release). Steps 1-2, port calls, voyage segmentation, c3 and the reference AIS version are unchanged.",
+  "evidence": "02_coding/outputs/2026-10-09_1809_E007-speed-trim-sensitivity/00_README.md",
+  "question": "The fast side of the annual q-trim (q01 of total voyage days per yardstick km, about 36 kn) removed 11,569 voyages, 87% of them no faster than 25 kn along the straight line between their two cities: the yardstick, the longest of three sea-route regimes, sends Red Sea ports around Africa when Bab-el-Mandeb is closed, and the route network lacks the Kiel Canal and some rivers. Keep it (A), refit on the base route distance (B), or replace it with a physical cap on the straight-line speed (C)?",
+  "choice": "C: the fast side drops a voyage only when the great-circle distance between its two GFW city coordinates, which no sea route can undercut, still needs more than 36 kn over the recorded voyage time plus one hour (see amendment). The cap applies to every voyage that passed c3, including the voyages with a zero yardstick that the q-trim never tested. The slow side keeps the pooled q99 of the same ratio fitted in E006 step 3; c3 is unchanged.",
+  "fast_cap_knots": 36,
+  "fast_cap_distance": "haversine_km (E007 e007_core, Earth radius 6371.0088 km) between port_lat/port_lon of origin_city and dest_city in the E006 GFW city table input_view/results/support/city_snap_table_2025.csv",
+  "fast_cap_time": "recorded voyage hours (arrival_time - departure_time) plus fast_cap_time_allowance_hours",
+  "fast_cap_time_allowance_hours": 1.0,
+  "fast_cap_tie": "a voyage at exactly 36 kn is kept",
+  "slow_side": "unchanged: drop normalized_time_ratio > 0.04680512383582364 (pooled 2025 q99, E006 step 3) among q-trim eligible voyages",
+  "c3": "unchanged",
+  "amendment": {
+    "date_local": "2026-10-09",
+    "question": "GFW voyage start and end times are whole hours, each off by up to 30 min, and 642 of the 919 voyages the cap removed over the recorded time alone record exactly 1 h (for example Hanko-Paldiski, 83 km: 45 kn over 1 h, 22 kn over 2 h). Give the cap the same allowance as the step-4 25 kn check (record interval + 1 h) and the step-6 fix-time tolerance (+/-30 min per end)?",
+    "choice": "Yes: the cap divides by the recorded voyage time plus one hour (30 min at each end).",
+    "without_allowance": {
+      "post_c3_voyages": 1254156,
+      "dropped_by_cap": 919,
+      "of_which_previously_fast_trimmed": 835,
+      "of_which_previously_retained": 84,
+      "restored_previously_fast_trimmed": 10734,
+      "slow_side_dropped": 11965,
+      "retained": 1241272
+    }
+  },
+  "expected_from_evidence": {
+    "post_c3_voyages": 1254156,
+    "dropped_by_cap": 559,
+    "of_which_previously_fast_trimmed": 550,
+    "of_which_previously_retained": 9,
+    "restored_previously_fast_trimmed": 11019,
+    "slow_side_dropped": 11965,
+    "retained": 1241632
+  },
+  "reference_ais_version": "unchanged; its q-trim keeps the original rule until a separate decision",
+  "unchanged": [
+    "c3",
+    "slow-side q99",
+    "step 4 tracks and step 5 weather of every voyage",
+    "E006 step-6 rule revision (config/step6_rule_revision.json)",
+    "minimum_voyages 5",
+    "bootstrap B=1000, seed 20260923, >=3 ships",
+    "ERA5/IBTrACS snapshots",
+    "holdout design"
+  ],
+  "not_authorized": [
+    "product adoption",
+    "manuscript edits",
+    "push",
+    "merge",
+    "public upload",
+    "sending files",
+    "network requests"
+  ]
+}

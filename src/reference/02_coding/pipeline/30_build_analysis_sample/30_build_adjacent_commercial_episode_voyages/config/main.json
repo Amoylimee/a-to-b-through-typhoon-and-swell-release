@@ -1,0 +1,49 @@
+{
+  "pipeline": "build_adjacent_commercial_episode_voyages",
+  "step": "build_adjacent_commercial_episode_voyages",
+  "voyage_definition": "adjacent_commercial_episodes",
+  "candidate_enumeration_mode": "adjacent_commercial_episodes",
+  "analysis_years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "analysis_vessel_universe": 20134,
+  "city_episode_rule": "merge_consecutive_activity_within_same_analytical_city",
+  "route_circuity_threshold": 2.0,
+  "hard_break_threshold_days": 30.0,
+  "extreme_duration_threshold_days": 30.0,
+  "positive_route_speed_threshold_knots": 1.0,
+  "exclude_zero_route_above_duration_threshold": true,
+  "same_node_route_backstop_km": 2000.0,
+  "qtrim": {
+    "scope": "year_specific_pooled",
+    "lower": 0.01,
+    "upper": 0.99,
+    "boundary_inclusive": true,
+    "grouping_columns": []
+  },
+  "disabled_rules": [
+    "congestion_exemption",
+    "cumulative_intermediate_stop_W",
+    "standalone_speed_gate",
+    "physical_duration_cap",
+    "shiptype_specific_qtrim",
+    "od_specific_qtrim"
+  ],
+  "missing_suez_exposure_label": "unsupported",
+  "main_shiptype_set": [
+    "container",
+    "bulk_carrier",
+    "crude_oil_tanker",
+    "general_cargo",
+    "product_chemical_tanker",
+    "ro_ro_vehicle",
+    "gas_tanker",
+    "reefer",
+    "other_retained"
+  ],
+  "formal_output_root": "data/processed/products/adjacent_commercial_episode_voyages"
+}

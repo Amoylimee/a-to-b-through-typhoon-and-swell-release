@@ -1,0 +1,24 @@
+{
+  "python": "3.10.15",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0",
+    "scipy": "1.14.1",
+    "pyarrow": "18.1.0",
+    "xarray": "2025.6.1",
+    "netCDF4": "1.7.4",
+    "shapely": "2.0.6",
+    "geopandas": "1.0.1",
+    "networkx": "3.4.2",
+    "PyYAML": "6.0.2",
+    "scikit-learn": "1.5.2",
+    "pytest": "9.1.1",
+    "sinbue": "0.8.0",
+    "iogenius": "0.1.0",
+    "searoute": "1.6.0",
+    "movingpandas": "0.22.4",
+    "natsort": "8.4.0"
+  },
+  "meaning": "Observed research environment; full annual reproduction also requires the documented input datasets and manifests."
+}

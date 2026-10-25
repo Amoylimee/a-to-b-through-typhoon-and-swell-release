@@ -1,0 +1,4 @@
+# Preserve distributed CSV bytes and their published checksums on every platform.
+*.csv -text whitespace=cr-at-eol
+*.pdf -text
+*.png -text

@@ -1,0 +1,70 @@
+{
+  "purpose": "Bind the same local frozen meteorological files by their existing SHA-256 receipts; no vessel or reference AIS weather-result input",
+  "assets": {
+    "ibtracs": {
+      "path": "02_coding/data/frozen_inputs/external/ibtracs/2026-09-06_v04r01/ibtracs.last3years.list.v04r01.csv",
+      "bytes": 10318225,
+      "sha256": "2f5d6f7c0eeab83ec23e306c9fcece5ddd85734e6ac36ae90cbc7624d527d771"
+    },
+    "era5_2025-01": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_01_monthly_wave.nc",
+      "bytes": 210161071,
+      "sha256": "2c37645a6fb60be24d9261bb38289a9f5c9d5989e7f517cafb45a766939639c8"
+    },
+    "era5_2025-02": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_02_monthly_wave.nc",
+      "bytes": 190929100,
+      "sha256": "335459022fbb7bf581672ced898823003b7c3f56317cd30ebe93e1e7e8afef5d"
+    },
+    "era5_2025-03": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_03_monthly_wave.nc",
+      "bytes": 209370584,
+      "sha256": "314c8f6248a4b8d83f0727f4a0fbfc5cf4dcf774d308fb00670e866f876182b4"
+    },
+    "era5_2025-04": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_04_monthly_wave.nc",
+      "bytes": 199165843,
+      "sha256": "6b561bbcab249e6632c62376ad90f579d26f92ee14db2c3a093dcb6b3c458338"
+    },
+    "era5_2025-05": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_05_monthly_wave.nc",
+      "bytes": 205173954,
+      "sha256": "87f1508d63a08e7c8f118b33bf1d2d012c9b7ad734709b71824206c167d6c54b"
+    },
+    "era5_2025-06": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_06_monthly_wave.nc",
+      "bytes": 200563961,
+      "sha256": "cf633bfe518b2e9b4df0351d9834a0ad081c7abb1940ddc151fcaa0c10180a3f"
+    },
+    "era5_2025-07": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_07_monthly_wave.nc",
+      "bytes": 210307351,
+      "sha256": "6fa0d0b9419fc4b7e2650f01cf8cc17da6ed9cd9ba35c0e9d274017142b726e5"
+    },
+    "era5_2025-08": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_08_monthly_wave.nc",
+      "bytes": 213151780,
+      "sha256": "e124474cb064895a183b8bf813758a417d69533c52c532a0a13c0713e8c0c14f"
+    },
+    "era5_2025-09": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_09_monthly_wave.nc",
+      "bytes": 207065100,
+      "sha256": "4357989d6f0deb993b244c633715e65b18ba13232957a252c9deb697455ee84a"
+    },
+    "era5_2025-10": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_10_monthly_wave.nc",
+      "bytes": 212314288,
+      "sha256": "0ec700942767ae71e6e25dfa9ada45e85bfe15efb561d9cab08faec5a4174343"
+    },
+    "era5_2025-11": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_11_monthly_wave.nc",
+      "bytes": 203747119,
+      "sha256": "85685951b8e8a9695ffc1c01d59c01c2d08990843cb80e79cf1b604c2bfd612a"
+    },
+    "era5_2025-12": {
+      "path": "02_coding/data/frozen_inputs/external/era5_2025/era5_p9_template_domain_swh_wind10m_2025_12_monthly_wave.nc",
+      "bytes": 211356915,
+      "sha256": "80a3e840570271839f2b8142ebe62a0245d6853c666702486e74a6794b633dad"
+    }
+  }
+}

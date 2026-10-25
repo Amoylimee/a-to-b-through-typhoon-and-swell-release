@@ -1,0 +1,213 @@
+{
+  "schema": "E001 current owned 2025 pretrim input version",
+  "status": "reviewed_pretrim_only",
+  "analysis_year": 2025,
+  "annual_pool_complete": false,
+  "missing_layers": [
+    "L3"
+  ],
+  "source_reviewed_commit": "5e0670a3494ed1016c55e59aff1fc574c7b3c9a5",
+  "interface_reviewed_commit": "8eea633bddec4182e9bb3d2cbf8ccf003909a640",
+  "city_reference": {
+    "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/city_snap_table_2025.csv",
+    "bytes": 2259393,
+    "sha256": "af17cbe3e6aedaf1125d89ed50f731dc5b2bf87022bbce2db8213d9938af55c1"
+  },
+  "layers": {
+    "L1": {
+      "pretrim_rows": 857105,
+      "vessels": 20064,
+      "pretrim_parts": [
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-000.feather",
+          "bytes": 8322570,
+          "sha256": "aa9de21391ebec52b80bc818086c5ed442879e6a33f5d7246514212c2ef3e7b8"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-001.feather",
+          "bytes": 8358746,
+          "sha256": "82cc84d463e89bfdb398e40d7918063bbd7e9addc320f6ef629e504e1c8c1038"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-002.feather",
+          "bytes": 8329306,
+          "sha256": "d5e02907a89716965533121545162a8bdbd81fad1eec0d4b4a7ffeb71810f722"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-003.feather",
+          "bytes": 8353962,
+          "sha256": "918a781f0359c1b158b4882b215166bdf863e4a19ae0bc3bdd36b2c05fa0ab8d"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-004.feather",
+          "bytes": 8374522,
+          "sha256": "df7ecc37e076658beb56a42cef7a950323ef196d11bf553b5ff98b2687dca193"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-005.feather",
+          "bytes": 8425626,
+          "sha256": "9342aadb2b3d7e8b956285b03019f6d7cac0dc6a61b394fafaa569c5e81570e9"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-006.feather",
+          "bytes": 8418586,
+          "sha256": "8a383c4505609730beb23372087e2b74894eee6c48ecbe600c9123cb20b90951"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-007.feather",
+          "bytes": 8401794,
+          "sha256": "343b83f6bd6f7a949bc1a9b702cb07c1621f25736dca180975a3397df23eaf58"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-008.feather",
+          "bytes": 8408266,
+          "sha256": "5cd6da98d906116cdc2b4ead018d12543cd697fe4165d4ba6e73e5f130862803"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-009.feather",
+          "bytes": 8418370,
+          "sha256": "cc9df25630552e8d8df4d08bc55527cbfb6069395bb816a66f514e9890916b75"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-010.feather",
+          "bytes": 8418674,
+          "sha256": "6a1ec73f6cbb128f450a7a5a1eff52e3379282802214fdb3a005ac39e7cce8bd"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-011.feather",
+          "bytes": 8409434,
+          "sha256": "fd798a167ff353fc3d17a49047e32e3d6ece3ff2883612eef40aa87731976f45"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-012.feather",
+          "bytes": 8434202,
+          "sha256": "49bcaab8fd34d7d556797009d382b6232db0239e29b2e61bb8ba2d3039867205"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-013.feather",
+          "bytes": 8413610,
+          "sha256": "e1462f4cd0fe3d30370031e65acb49666475c9cf9e07d88b887a4602a43d55d0"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-014.feather",
+          "bytes": 8410594,
+          "sha256": "a6cc1e0ca75124eb441520523d8222f24e9c4c44dd808991749e803f3a807ac2"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/filters/c4_pretrim_2025/part-015.feather",
+          "bytes": 8400978,
+          "sha256": "a4267e42b083d45c0461b593cccf301412587ce90cdc5e3998efb664f2dc70d9"
+        }
+      ],
+      "yardstick": {
+        "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/yardstick_table_2025.feather",
+        "bytes": 7903354,
+        "sha256": "fca47715d9ddf36d6e7fd774b0f7a2211c17a3c9b03828934214c03c0e9cc0ad"
+      },
+      "original_run_manifest": {
+        "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L1/manifest.json",
+        "bytes": 36485,
+        "sha256": "390e2f43c831a5a75f781fa92d63815e91613ea15e3ce1792f3554be0c361c42"
+      }
+    },
+    "L2": {
+      "pretrim_rows": 36287,
+      "vessels": 779,
+      "pretrim_parts": [
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-000.feather",
+          "bytes": 107354,
+          "sha256": "7a2184fb3154097ddacab29e5c96f18cb64e7f449ac66f19ce9dc2c7a11be6ec"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-001.feather",
+          "bytes": 245826,
+          "sha256": "6bd035752f1d825d7322f9a93c4b11f71756b7b368ccdfd9a189cfc18a4a8c7b"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-002.feather",
+          "bytes": 293026,
+          "sha256": "fb525416ebe8400f4317bdc45194b8b975855bfeb440371b4ffb5a62cde7528f"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-003.feather",
+          "bytes": 344682,
+          "sha256": "761455262cc4699da1ea07639580d90db1ee9eb0e0dd4bc6a66bb081f49a71e3"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-004.feather",
+          "bytes": 380466,
+          "sha256": "bb4c7390795c46775214f89cd9e46f36646e57ed97b01937083a48ed5319292c"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-005.feather",
+          "bytes": 385554,
+          "sha256": "675f52997d2b115c8caf5ec2168b002ad7ff89b332ec6fd6c0b45fd4c66ea4d7"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-006.feather",
+          "bytes": 390882,
+          "sha256": "2066b36055d3e73ddcf082e2c549dcd636e3fc9cb0fc00a84494cdfab72f2cda"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-007.feather",
+          "bytes": 392746,
+          "sha256": "4400be7fe8f709e17512202489a250ee3c16d1f455215372cc78a425983d0fcd"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-008.feather",
+          "bytes": 388650,
+          "sha256": "03c651d729f1ab6071e10e2efb8dc3e5a54f01e7be6d906cac13ef09bbac7a81"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-009.feather",
+          "bytes": 401346,
+          "sha256": "97962d880651844ee7a739b200324c1044e18d869d4e0e6668ad3964d924c4b3"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-010.feather",
+          "bytes": 398930,
+          "sha256": "477fe2da908316cb47dc6fbd4260bbf108427a3f1957d6d0f8eb877347d948b1"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-011.feather",
+          "bytes": 401306,
+          "sha256": "71a3eb3c40f11beb64027c37a79502fd020bd77eb27ca684f6314ee02001a968"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-012.feather",
+          "bytes": 410594,
+          "sha256": "b7b49deec39783cac8a885ff41fb0688b31988def61228442ca83bac5ad5d884"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-013.feather",
+          "bytes": 411050,
+          "sha256": "7cfd3e7cf820a8b89a6993d9b32e42ec02618bac556f2ab3d9dcb6fb668e32b1"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-014.feather",
+          "bytes": 415890,
+          "sha256": "37396b6803d73b11669abe072926122e4d1fbcd0855fb2e402be9819616d8c92"
+        },
+        {
+          "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/filters/c4_pretrim_2025/part-015.feather",
+          "bytes": 411586,
+          "sha256": "4577c9dd763e44eb1dcc254d3d660e2bdb2b0ca3f52c72d5b0600dca97899e6f"
+        }
+      ],
+      "yardstick": {
+        "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/yardstick_table_2025.feather",
+        "bytes": 836890,
+        "sha256": "47c9222fc29985fcb04c8b506e487f983a2ff30566f1f578981f1b7d6d4c7758"
+      },
+      "original_run_manifest": {
+        "path": "02_coding/data/frozen_inputs/e001_2025_pretrim_golfito_corrected/L2/manifest.json",
+        "bytes": 39426,
+        "sha256": "060001edfbd8b43db7f81c7cfa2da0e00972ae8b0e17457ec9c6fc077264f183"
+      }
+    }
+  },
+  "historical_retention_manifest": "02_coding/data/reuse_ledger/historical_retention_2025.json",
+  "formal_qtrim_run": false,
+  "formal_downstream_ready": false
+}

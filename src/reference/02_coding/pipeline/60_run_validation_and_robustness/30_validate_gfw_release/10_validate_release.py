@@ -1,0 +1,1 @@
+../../gfw_release/260_validate_gfw_release.py

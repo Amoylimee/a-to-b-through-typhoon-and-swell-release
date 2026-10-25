@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-16",
+  "branch": "experiment/E008-gfw-monthly-public-release",
+  "experiment": "E008",
+  "scope": "Reaggregate the adopted GFW voyages by UTC departure month into country-pair and coded city-pair tables, without a voyage-count release threshold. Preserve adopted exposure definitions and ship-cluster sampling intervals.",
+  "year": 2025,
+  "voyages": 1111800,
+  "voyage_hours": 140832051.0,
+  "country_records": 122736,
+  "city_records": 566294,
+  "minimum_voyages": 1,
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 20260923,
+  "minimum_ships_for_sampling_interval": 3,
+  "city_codes": "Random within-country four-digit codes; draw seed not recorded; frozen private map reused for reruns of this GFW release. The earlier E004 map is preserved separately.",
+  "research_accepted_commit": "7d41c561933d6374385db15d5ac26af13b4ec7c2",
+  "source_sha256": {
+    "assembly/voyage_intervals.parquet": "145c8fda4849e56da9385ce34c20e142129d3aea8eeae263402273871f1e1afb",
+    "assembly/all_combinations.parquet": "63da86b999bef0aef7695d019c752223221ea3f151dba724711ebdbee07a9804",
+    "assembly/release_full_precision.parquet": "7987b3cc701f9c6ab4c33292c2b7b2215090460ca2e1091e91cd434230e7a0c3",
+    "assembly/status.json": "fe9522b39dfa32ba5a5610ad9f884817dd7e97400308bcf4590c107af3cdfa68",
+    "validation.json": "26bd7917389f661c01a450806caa888616fe6d99bc73abfb35fc9589eada685f"
+  },
+  "network_data_acquisition": false,
+  "recompute_tracks_or_weather": false,
+  "modify_accepted_inputs": false,
+  "public_upload": false,
+  "merge_or_promotion": false
+}

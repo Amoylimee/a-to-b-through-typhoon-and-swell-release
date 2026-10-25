@@ -1,0 +1,32 @@
+{
+  "experiment": "E007",
+  "date_local": "2026-10-11",
+  "timezone": "Asia/Hong_Kong",
+  "context": "After the explained real-unknown-hour coastal counterexample, the user authorized fixing and validating wave-bound spatial support and further investigating the 16 priority voyage cards before manuscript revision.",
+  "scope": [
+    "Expand unknown-position wave bounds to cover the existing ERA5 weather matcher's eligible grid support",
+    "Compare unchanged frozen 700-window and 122-real-unknown-hour diagnostic manifests, support and widths before an annual bounds rebuild",
+    "Recompute annual wave bounds in a new run and reuse verified unchanged TC bounds, weather facts, holdouts and bootstrap components",
+    "Investigate the 16 priority cards using existing local observed GFW/reference AIS points and frozen port rules, keeping assistant evidence separate from independent human validation"
+  ],
+  "wave_support_rule": "Extrema of all finite ERA5 grid centres within every physical endpoint cap enlarged by the existing maximum wet-cell match distance. Complete KD-tree enumeration on the frozen canonical ERA5 grid; no thinning. Reject physically speed-infeasible two-sided endpoints before adding the spatial matching margin.",
+  "support_argument": "For any physically reachable x matched to wet cell w at distance at most S, spherical triangle inequality gives distance(endpoint,w) <= physical reachable radius + S. The same S covers the nominal 0.5-degree grid-centre rounding. This is a conservative superset, not the exact image of the matching function.",
+  "speed_cap_knots": 25,
+  "maximum_wet_cell_snap_km": 117.94,
+  "fix_time_tolerance_hours": 0.5,
+  "port_time_tolerance_hours": 1,
+  "primary_wave_estimand": "matched_mean",
+  "primary_wave_facts_and_bootstrap": "unchanged",
+  "cyclone_bounds": "reuse exactly from validated option-C closure, unchanged",
+  "not_authorized": [
+    "Changing voyage segmentation or port acceptance rules without a scoped decision",
+    "reference AIS inputs to the public GFW product",
+    "manuscript edits",
+    "formal adoption",
+    "merge",
+    "push",
+    "external sharing",
+    "network requests",
+    "changes to historical snapshots"
+  ]
+}

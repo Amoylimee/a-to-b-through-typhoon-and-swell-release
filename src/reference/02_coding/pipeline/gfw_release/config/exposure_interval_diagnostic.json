@@ -1,0 +1,18 @@
+{
+  "year": 2025,
+  "seed": 20261011,
+  "windows_per_main_stratum": 10,
+  "storm_windows_per_duration": 10,
+  "durations_hours": [2, 4, 6, 12, 24, 36, 48],
+  "long_window_candidate_pool_per_shiptype": 100,
+  "long_window_storm_candidate_pool": 100,
+  "speed_cap_knots": 25,
+  "fix_time_tolerance_hours": 0.5,
+  "known_context_full_hours": 2,
+  "unknown_hours": "Full UTC hours strictly inside the frozen hh:30 observation endpoints",
+  "reference": "Production GFW hourly weather for conditional coherence; existing reference AIS observed AIS nearest the UTC hour within 5 minutes for separate reference comparisons",
+  "wave_denominator": "Exactly the same supported M+Q hours in bounds and reference; unsupported and unavailable-reference hours excluded from both and counted",
+  "tc_denominator": "Exactly the same available-reference M+Q hours in bounds and reference; no missing reference filled as zero",
+  "selection": "Stable hash rank before evaluation; 36/48 h dense extensions from the existing 24 h manifest candidate pool; storm extensions retain the original storm window",
+  "interpretation": "Additional diagnostic, not a production holdout-design change, confidence interval, independent physical truth, or full annual OD validation"
+}

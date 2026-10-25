@@ -1,0 +1,465 @@
+{
+  "source_branch": "experiment/E007-2025-gfw-robustness-validation",
+  "source_commit": "bc21eb3",
+  "date_local": "2026-10-14",
+  "files": [
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/100_build_gfw_unified_shards.py",
+      "canonical": "02_coding/pipeline/gfw_release/100_build_gfw_unified_shards.py",
+      "source_sha256": "02ab688d65bb987e8542c0653cfb18edd0e6af16362d676418e166e4ce27d945",
+      "sha256": "02ab688d65bb987e8542c0653cfb18edd0e6af16362d676418e166e4ce27d945"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/110_run_gfw_cleaning.py",
+      "canonical": "02_coding/pipeline/gfw_release/110_run_gfw_cleaning.py",
+      "source_sha256": "11d17eb8ce47ee9397c4c37c5f76bcf08d7fd0371ba09f695c21eaad72fea8bf",
+      "sha256": "11d17eb8ce47ee9397c4c37c5f76bcf08d7fd0371ba09f695c21eaad72fea8bf"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/120_run_gfw_port_calls.py",
+      "canonical": "02_coding/pipeline/gfw_release/120_run_gfw_port_calls.py",
+      "source_sha256": "03e86331f395e57eecff5e05d968286200dee992f4e774fda99f0ec8c8b7f0f4",
+      "sha256": "03e86331f395e57eecff5e05d968286200dee992f4e774fda99f0ec8c8b7f0f4"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/125_build_city_mapping_corrections.py",
+      "canonical": "02_coding/pipeline/gfw_release/125_build_city_mapping_corrections.py",
+      "source_sha256": "9c8d08c11fc4e5f38fffa6d0e20ee98d4b95bedff9bdf73fe487e922ec725c91",
+      "sha256": "9c8d08c11fc4e5f38fffa6d0e20ee98d4b95bedff9bdf73fe487e922ec725c91"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/130_build_gfw_voyage_base.py",
+      "canonical": "02_coding/pipeline/gfw_release/130_build_gfw_voyage_base.py",
+      "source_sha256": "f6ad7dc451ee4a9b18d4aaf245502dc5e3c6b64b0ffb5366cd1decd6bf40a1c9",
+      "sha256": "f6ad7dc451ee4a9b18d4aaf245502dc5e3c6b64b0ffb5366cd1decd6bf40a1c9"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/160_build_gfw_ten_minute_tracks.py",
+      "canonical": "02_coding/pipeline/gfw_release/160_build_gfw_ten_minute_tracks.py",
+      "source_sha256": "897db4059bc272df7e7e71b7bfba159dc690ae5777e21a5f3e23753fa065b7a9",
+      "sha256": "897db4059bc272df7e7e71b7bfba159dc690ae5777e21a5f3e23753fa065b7a9"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/170_validate_gfw_ten_minute_tracks.py",
+      "canonical": "02_coding/pipeline/gfw_release/170_validate_gfw_ten_minute_tracks.py",
+      "source_sha256": "ef99ffa70e54ee353c9a858f860cccbeb4c3eb2babb376eef0d33e5217324370",
+      "sha256": "ef99ffa70e54ee353c9a858f860cccbeb4c3eb2babb376eef0d33e5217324370"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/180_run_gfw_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/180_run_gfw_weather.py",
+      "source_sha256": "63fb174a7ddcf46460fd690294c21bd9883a12bb5e8fe8275ef94475029e91a6",
+      "sha256": "63fb174a7ddcf46460fd690294c21bd9883a12bb5e8fe8275ef94475029e91a6"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/190_validate_gfw_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/190_validate_gfw_weather.py",
+      "source_sha256": "9e118ee5267144e6a3089660cf0c48923e88199d6d255790a9644a1e5715fcd1",
+      "sha256": "9e118ee5267144e6a3089660cf0c48923e88199d6d255790a9644a1e5715fcd1"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/200_prepare_gfw_release.py",
+      "canonical": "02_coding/pipeline/gfw_release/200_prepare_gfw_release.py",
+      "source_sha256": "fb1427c7aa9ea36a1d0b6727b24168b059e87b93ab2f8bf31d5893154d490cb5",
+      "sha256": "fb1427c7aa9ea36a1d0b6727b24168b059e87b93ab2f8bf31d5893154d490cb5"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/210_bound_gfw_missing_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/210_bound_gfw_missing_weather.py",
+      "source_sha256": "ecfc8051e092ebd80742d3a6300190a65b5d73aa26b63b51c7b7c33871e3ab19",
+      "sha256": "ecfc8051e092ebd80742d3a6300190a65b5d73aa26b63b51c7b7c33871e3ab19"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/220_prepare_gfw_holdouts.py",
+      "canonical": "02_coding/pipeline/gfw_release/220_prepare_gfw_holdouts.py",
+      "source_sha256": "bf175012fae4c1ea32bb923232b2ca8043646658f9e2909e9bafb020f7d5ec8f",
+      "sha256": "bf175012fae4c1ea32bb923232b2ca8043646658f9e2909e9bafb020f7d5ec8f"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/230_run_gfw_holdouts.py",
+      "canonical": "02_coding/pipeline/gfw_release/230_run_gfw_holdouts.py",
+      "source_sha256": "41ee0d41e41014c62df3331b8a083c5134408d51f78311134fee1f7a077b9d38",
+      "sha256": "41ee0d41e41014c62df3331b8a083c5134408d51f78311134fee1f7a077b9d38"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/240_bootstrap_gfw_release.py",
+      "canonical": "02_coding/pipeline/gfw_release/240_bootstrap_gfw_release.py",
+      "source_sha256": "37f9d345c550d2a5dd6efa0de049fd27185656fe381224d42c6614103525135e",
+      "sha256": "37f9d345c550d2a5dd6efa0de049fd27185656fe381224d42c6614103525135e"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/250_assemble_gfw_release.py",
+      "canonical": "02_coding/pipeline/gfw_release/250_assemble_gfw_release.py",
+      "source_sha256": "bee641fc733f216bc39ceea7fa91fa3acc96e5500855f1bc890dc03d7c160f66",
+      "sha256": "bee641fc733f216bc39ceea7fa91fa3acc96e5500855f1bc890dc03d7c160f66"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/260_validate_gfw_release.py",
+      "canonical": "02_coding/pipeline/gfw_release/260_validate_gfw_release.py",
+      "source_sha256": "e1f3c20e3bdb80e204e166fa27114a96af3b875238924827f554cbf8f8ba0cbb",
+      "sha256": "e1f3c20e3bdb80e204e166fa27114a96af3b875238924827f554cbf8f8ba0cbb"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/270_document_gfw_release.py",
+      "canonical": "02_coding/pipeline/gfw_release/270_document_gfw_release.py",
+      "source_sha256": "912fa212c198a5c72fd7fb25972882cc88050c309d6791b59d6095966c459a02",
+      "sha256": "2a62ac0ce03def19c975788631b328591c3ef9f6fca2b5b17bc240a520b8f697"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/port_constraints.py",
+      "canonical": "02_coding/pipeline/gfw_release/port_constraints.py",
+      "source_sha256": "90e35acbde1850a2ed2f15008eacf8a84abe042e29b0aae86ec1b9d7f859680d",
+      "sha256": "90e35acbde1850a2ed2f15008eacf8a84abe042e29b0aae86ec1b9d7f859680d"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/step6_core.py",
+      "canonical": "02_coding/pipeline/gfw_release/step6_core.py",
+      "source_sha256": "1d9be0b5a759ceda372b750e800cd9d4673458d43e8dec556bb735e3e821ae17",
+      "sha256": "fe73f6d334df5e4d6e697fd69b2967205ce4e70e63ffb44120971beefe19367f"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/config/t034_anchorage_city_corrections.csv",
+      "canonical": "02_coding/pipeline/gfw_release/config/t034_anchorage_city_corrections.csv",
+      "source_sha256": "9a23e6b69a4267762deaef5d19212e9d2302606eaada109d2c1b0f3e2cb660fd",
+      "sha256": "9a23e6b69a4267762deaef5d19212e9d2302606eaada109d2c1b0f3e2cb660fd"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/config/step5_weather_authorization.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/step5_weather_authorization.json",
+      "source_sha256": "3a10f4184c45dfd0e3c6780ead45df2dce2f232492e9a2a74260287ce37b3e3d",
+      "sha256": "3a10f4184c45dfd0e3c6780ead45df2dce2f232492e9a2a74260287ce37b3e3d"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/config/step5_frozen_weather_assets.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/step5_frozen_weather_assets.json",
+      "source_sha256": "3a3c38fee94090c31fdb0152042d68ef94b853408e22ff42f861164f76345a5b",
+      "sha256": "3a3c38fee94090c31fdb0152042d68ef94b853408e22ff42f861164f76345a5b"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/config/step6_release_authorization.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/step6_release_authorization.json",
+      "source_sha256": "02ce1488f5dcecb828fa9bf30881da126ab2a0c87e4b1b5616ac8ee2910fb931",
+      "sha256": "02ce1488f5dcecb828fa9bf30881da126ab2a0c87e4b1b5616ac8ee2910fb931"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/config/step6_rule_revision.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/step6_rule_revision.json",
+      "source_sha256": "7b1030ba92a40649ecfc01760eb65eecc142f725fe19df8e84b215b6a36638fa",
+      "sha256": "7b1030ba92a40649ecfc01760eb65eecc142f725fe19df8e84b215b6a36638fa"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/tests/test_step5_authorization.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_step5_authorization.py",
+      "source_sha256": "41ce8dd77f5af507f46199a4c8149447dd7f2f9c323bc07ded0d07008dbce5f0",
+      "sha256": "41ce8dd77f5af507f46199a4c8149447dd7f2f9c323bc07ded0d07008dbce5f0"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/tests/test_step6_scope_and_holdout.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_step6_scope_and_holdout.py",
+      "source_sha256": "d3be6391718af0632602e3c03b09c8d3be55a81e4d7cb7ee8ad90545171480e2",
+      "sha256": "d3be6391718af0632602e3c03b09c8d3be55a81e4d7cb7ee8ad90545171480e2"
+    },
+    {
+      "source": "02_coding/experiments/E006_2025_gfw_presence_release/tests/test_step6_rule_revision.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_step6_rule_revision.py",
+      "source_sha256": "c225d6ee580d476c525a126b6c46217103056e197b3bf377bddea7298a8a8a30",
+      "sha256": "c225d6ee580d476c525a126b6c46217103056e197b3bf377bddea7298a8a8a30"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/10_extract_reference_ais_observed.py",
+      "canonical": "02_coding/pipeline/gfw_release/10_extract_reference_ais_observed.py",
+      "source_sha256": "b3f35264daa22c753efcb5cf48c10607eff44ff8c5702c3ede849c2ac89b2e3f",
+      "sha256": "b3f35264daa22c753efcb5cf48c10607eff44ff8c5702c3ede849c2ac89b2e3f"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/20_compare_real_gaps.py",
+      "canonical": "02_coding/pipeline/gfw_release/20_compare_real_gaps.py",
+      "source_sha256": "d439a9fc80b32b0291ee988b2bc95f5111a3ba1cb242a863d991cade99e02e29",
+      "sha256": "de96fdda1c5fce6a8498ad21fb9887935d1f427016ce0625fd59a87e5aa64bf9"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/25_summarize_real_gaps.py",
+      "canonical": "02_coding/pipeline/gfw_release/25_summarize_real_gaps.py",
+      "source_sha256": "6b36fd8506ca594b2cd438d7ee50ee6260d024cca64c309776193fa042b7cfcd",
+      "sha256": "3d0de94164ce1284b20e59b94b156f6c7c2dbf8478405be56e32d4cc82944b7e"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/27_containment_tolerance.py",
+      "canonical": "02_coding/pipeline/gfw_release/27_containment_tolerance.py",
+      "source_sha256": "a00f0576ef97485ac1f0a276367b78d05d580cb65b590cc538b22211f4a6c3db",
+      "sha256": "61e2d6f500b37e3ea0a8d0915574a30749937ee1b3d06cef6c11614c3213fc63"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/30_compare_real_gap_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/30_compare_real_gap_weather.py",
+      "source_sha256": "7801ec225fd456ffcaa44f980bd030ec2b4c63f9194dbe84375da41e9936a807",
+      "sha256": "7801ec225fd456ffcaa44f980bd030ec2b4c63f9194dbe84375da41e9936a807"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/35_summarize_real_gap_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/35_summarize_real_gap_weather.py",
+      "source_sha256": "0bb1309a9a43abf136ed9f8eba6ace75bc4c41dd9f10f1f91bb05647b0270b06",
+      "sha256": "43bd7d583432820fc41bc4c031ded68c3ab6a6bf2659738a097fb8b7863c9453"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/40_build_supplementary_fields.py",
+      "canonical": "02_coding/pipeline/gfw_release/40_build_supplementary_fields.py",
+      "source_sha256": "7fd9b27a93cd9a32a4b7569187d2f3fbd113f14f957437fa3c9072b172964324",
+      "sha256": "7fd9b27a93cd9a32a4b7569187d2f3fbd113f14f957437fa3c9072b172964324"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/45_build_city_reference.py",
+      "canonical": "02_coding/pipeline/gfw_release/45_build_city_reference.py",
+      "source_sha256": "0229fcdd23a807d4cec542e8bcd1b0ed4081bfc3da9bcb51fbf9c851a5a0576a",
+      "sha256": "0229fcdd23a807d4cec542e8bcd1b0ed4081bfc3da9bcb51fbf9c851a5a0576a"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/50_threshold_sensitivity.py",
+      "canonical": "02_coding/pipeline/gfw_release/50_threshold_sensitivity.py",
+      "source_sha256": "0bef20c81564ec5c6dc7e6b1a9b26608a7f339c7cf5d23ddf047cd736a34f875",
+      "sha256": "0bef20c81564ec5c6dc7e6b1a9b26608a7f339c7cf5d23ddf047cd736a34f875"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/60_compare_voyage_segmentation.py",
+      "canonical": "02_coding/pipeline/gfw_release/60_compare_voyage_segmentation.py",
+      "source_sha256": "907464a175d2b055f0ef7b10563515ed4718ec452c6524ee2342eef047cfe42a",
+      "sha256": "e597b71a735d4b2b6b8df243d4f3ba30004192b624336f0c807d773a5b8cf067"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/130_validate_exposure_intervals.py",
+      "canonical": "02_coding/pipeline/gfw_release/130_validate_exposure_intervals.py",
+      "source_sha256": "0288286758744bd892ad75cbf15f56fd831676ebdd927f7fc3d0f61d7eae6fcf",
+      "sha256": "f37dcbbd50d8316e71c8c43fb8c181fbbd0d3186e0c766b8ffaecd3646963ca5"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/140_validate_real_unknown_intervals.py",
+      "canonical": "02_coding/pipeline/gfw_release/140_validate_real_unknown_intervals.py",
+      "source_sha256": "6775c43a90f842982589d5a2a19952516b57a3da14dc0d53321618f77238c3a7",
+      "sha256": "33e975216f04450646a0b02611590bfb524c1d61bdffb10fb40b2363fcbecba9"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/200_rebuild_port_segmentation.py",
+      "canonical": "02_coding/pipeline/gfw_release/200_rebuild_port_segmentation.py",
+      "source_sha256": "d2c65bf830ed3ae2f37693bc88a96d980f2c2b60c62469ca138fcf7e933013fc",
+      "sha256": "f191c1775d2c0363751adbe6ea5d05a3a909612457c5a1d0d8268a2343ac2d7c"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/201_combine_port_segmentation.py",
+      "canonical": "02_coding/pipeline/gfw_release/201_combine_port_segmentation.py",
+      "source_sha256": "0c093a1d0dad00210cc5ba1c8a3b56c80bcce6711bec02c90f6e09fd381fe487",
+      "sha256": "5a9c84b9bb5885c450da5a3a4b21c6fce7e0c96486bc226f63d35cab35bc5739"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/205_validate_segmented_priority_cases.py",
+      "canonical": "02_coding/pipeline/gfw_release/205_validate_segmented_priority_cases.py",
+      "source_sha256": "9d3541709e158394f564967376b4abd9e0e193a352c70425571beb6ddc4f7e2b",
+      "sha256": "1874c6d1ccca817623847c8864060e727c94f06159d880ebcbb5c3c8764d1c40"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/210_rebuild_segmented_voyage_base.py",
+      "canonical": "02_coding/pipeline/gfw_release/210_rebuild_segmented_voyage_base.py",
+      "source_sha256": "48b155f259b0caeaf5ece33a4f149cd58b510cba5d0be3fd7e1e98f9d840315d",
+      "sha256": "d5f21b6d031cf5342cbba818ceb0363d62954791d605ad01e9824afb7928f05b"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/220_rebuild_segmented_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/220_rebuild_segmented_weather.py",
+      "source_sha256": "220519fb1fca636e2ec1d999ffcb7dceb633822accf8b7cbbba94f7559a7fcd5",
+      "sha256": "425066c03fd9336e79ac9237b53a587ec773322636ce734fe2dd5f258322d4a0"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/230_bound_segmented_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/230_bound_segmented_weather.py",
+      "source_sha256": "83d4d71c1cbef70b4f31269fffaa9606095bbce407ceabddd5c7fec214d5c305",
+      "sha256": "7b1c62d575fd25e6e65424946c8760f5e30ba71b45ebdb8b52f2f959de6c9943"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/235_reuse_equivalent_segmented_bounds.py",
+      "canonical": "02_coding/pipeline/gfw_release/235_reuse_equivalent_segmented_bounds.py",
+      "source_sha256": "95addb7f5aab40b4735f1b273d741e87900ee956d6a66da539102a8f19e570c8",
+      "sha256": "2f5e24918858d00c09410db6f99398c3c8acc92b4a929eb295b382a8fcba24fe"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/240_build_segmented_release.py",
+      "canonical": "02_coding/pipeline/gfw_release/240_build_segmented_release.py",
+      "source_sha256": "28dc7a456ca86bb5d6f2297ffba84c6792ddb32f8944076913bc604d5b9996e0",
+      "sha256": "7087f1575c006730241c43db32d847ae98288721dda2eca08cb51d414aac1cc2"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/245_recheck_segmented_real_unknowns.py",
+      "canonical": "02_coding/pipeline/gfw_release/245_recheck_segmented_real_unknowns.py",
+      "source_sha256": "9e67d7cce8ccda38ba824439b2fd7fd6c0e87750828dfbb593b706c4b9890385",
+      "sha256": "f04285c6456adc1d9bace455151c36b78e34c04feee3ef7b5398d8d2fb865d9a"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/255_refresh_segmented_supplements.py",
+      "canonical": "02_coding/pipeline/gfw_release/255_refresh_segmented_supplements.py",
+      "source_sha256": "745a74a792d1bd4b607a96707a81b2d8ffccfadd4870870f2446a96d2f9ca3fc",
+      "sha256": "52bcfee3d4bbdee6cce75cf5b50561e3427c10d4c6b64911bf4aaa74f6c329ff"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/260_reguard_one_cell_short_stops.py",
+      "canonical": "02_coding/pipeline/gfw_release/260_reguard_one_cell_short_stops.py",
+      "source_sha256": "044b2cf30696fbc2f08c2bbece79aa1af4d70fa4316bed3d00eea98b9c57f6b2",
+      "sha256": "bdea22feec4bdeb80f959bd8e55ab6acf59f4773fc778251b63e993f4ac8dad3"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/265_compose_one_cell_weather.py",
+      "canonical": "02_coding/pipeline/gfw_release/265_compose_one_cell_weather.py",
+      "source_sha256": "39c766346096c9e7ca81e9c71aef3aeeeda01b37125539c879409400a680d24e",
+      "sha256": "67c024bd220828761fb3af014973188ee0554fc266dc309538df80b4ecd8a6c7"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/270_build_one_cell_track_view.py",
+      "canonical": "02_coding/pipeline/gfw_release/270_build_one_cell_track_view.py",
+      "source_sha256": "fa6f0b3917a59ba9f47dbf7d071a3c8ee0842f99e32e97d5a1f457c882d9eead",
+      "sha256": "b4b98d8dafa99899de8325d1144bd62395b9e4a84221e38e58ba7e8866aba34c"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/275_package_one_cell_validation.py",
+      "canonical": "02_coding/pipeline/gfw_release/275_package_one_cell_validation.py",
+      "source_sha256": "def4ad59c71d1f241b3d8904334253d39570df5661d23ddb7f0e1999ec960d9f",
+      "sha256": "103f152d014d1fbe5644b052011d8c8e23ceaa85332b752114899207730c1430"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/280_summarize_wave_match_distance.py",
+      "canonical": "02_coding/pipeline/gfw_release/280_summarize_wave_match_distance.py",
+      "source_sha256": "41b14a39c76312f7f9ac35428b9940a59a1c43b505712329371b49564bdb66dc",
+      "sha256": "4118c643939a944c3e96ddef8e2d566b026ae3532662abb4b937ed5b3e0ddde0"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/e007_core.py",
+      "canonical": "02_coding/pipeline/gfw_release/e007_core.py",
+      "source_sha256": "32e7767aa5edaca4f018236fec359825c8fc27970ef2f586eea9fb1c77dd3490",
+      "sha256": "32e7767aa5edaca4f018236fec359825c8fc27970ef2f586eea9fb1c77dd3490"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/interval_validation_core.py",
+      "canonical": "02_coding/pipeline/gfw_release/interval_validation_core.py",
+      "source_sha256": "b95021551497fb80f4bc61397a6e015331b4a1dd17fc50fb333123c8e3773940",
+      "sha256": "b95021551497fb80f4bc61397a6e015331b4a1dd17fc50fb333123c8e3773940"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/port_segmentation.py",
+      "canonical": "02_coding/pipeline/gfw_release/port_segmentation.py",
+      "source_sha256": "719dc39335b9b052e2f1c0664ccf42eb91ac153aeb540c1b11f0cd3c6633cb19",
+      "sha256": "c30436abf7883db2e544f3b3f1c3b642ec4e8fa982de47df42812b5743721fe6"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/wave_support_bounds.py",
+      "canonical": "02_coding/pipeline/gfw_release/wave_support_bounds.py",
+      "source_sha256": "034a3488b36a5aa7ff3b5843d4e1417233a7a47753393984540cb7362a8070b6",
+      "sha256": "034a3488b36a5aa7ff3b5843d4e1417233a7a47753393984540cb7362a8070b6"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/e007_authorization.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/e007_authorization.json",
+      "source_sha256": "99b88b9d557a970e9248fada4b33263c62c261b69ae58425c65a3a504c3c865c",
+      "sha256": "99b88b9d557a970e9248fada4b33263c62c261b69ae58425c65a3a504c3c865c"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/option_c_speed_rule.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/option_c_speed_rule.json",
+      "source_sha256": "199798efc906f1f3b5a7b296372f91113a80b30249582581bc35d578a6c0a8fa",
+      "sha256": "199798efc906f1f3b5a7b296372f91113a80b30249582581bc35d578a6c0a8fa"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/validation_closure_authorization.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/validation_closure_authorization.json",
+      "source_sha256": "cb5f60e2765ab6e02f1024dda8515a98d50e6c28da036420f853ad7bf06d055c",
+      "sha256": "cb5f60e2765ab6e02f1024dda8515a98d50e6c28da036420f853ad7bf06d055c"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/exposure_interval_diagnostic.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/exposure_interval_diagnostic.json",
+      "source_sha256": "317bae50f743366f7d7d9fbb98658ff25f61bf9e909edf3fa0fa96d05b68ef7a",
+      "sha256": "317bae50f743366f7d7d9fbb98658ff25f61bf9e909edf3fa0fa96d05b68ef7a"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/wave_support_revision.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/wave_support_revision.json",
+      "source_sha256": "7154a7a0fb3ddedff0569094fbe3f5b814364fae6f1ab36d3f4d70fe13bff8e3",
+      "sha256": "7154a7a0fb3ddedff0569094fbe3f5b814364fae6f1ab36d3f4d70fe13bff8e3"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/port_segmentation_revision.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/port_segmentation_revision.json",
+      "source_sha256": "b7cb5fa128b7f2fe221dba5e3ff93be3772cdfd77c815225299519ab7d4f4c60",
+      "sha256": "b7cb5fa128b7f2fe221dba5e3ff93be3772cdfd77c815225299519ab7d4f4c60"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/short_stop_allowance_revision.json",
+      "canonical": "02_coding/pipeline/gfw_release/config/short_stop_allowance_revision.json",
+      "source_sha256": "e4fa034a67fc3717dfdb232ec238b302241f77b130d49296c9ac1a881d516813",
+      "sha256": "e4fa034a67fc3717dfdb232ec238b302241f77b130d49296c9ac1a881d516813"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/tests/test_e007_core.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_e007_core.py",
+      "source_sha256": "8bb56827a05b4a54dd776bb6f874f829e4ae633505af0624f31ace2353a9b5f6",
+      "sha256": "8bb56827a05b4a54dd776bb6f874f829e4ae633505af0624f31ace2353a9b5f6"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/tests/test_port_constraints.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_port_constraints.py",
+      "source_sha256": "c1fa0749f0b88bc4a577df8bd63421f4cf55d83352528d069208cfda95974011",
+      "sha256": "929bb1bf0e843e87845e94c6f33380513cfb0a06ebb4ae7118f5dc12e802c4c5"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/tests/test_interval_validation.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_interval_validation.py",
+      "source_sha256": "eb54ebe9c89e70636382a3c3c7baeba563a32b6a76acd6119dafd4517403a34e",
+      "sha256": "eb54ebe9c89e70636382a3c3c7baeba563a32b6a76acd6119dafd4517403a34e"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/tests/test_wave_support_bounds.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_wave_support_bounds.py",
+      "source_sha256": "1a18aa1114cd7b093ab38e7a7b3edffe7843c4559152725468114b57eda73185",
+      "sha256": "1a18aa1114cd7b093ab38e7a7b3edffe7843c4559152725468114b57eda73185"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/tests/test_port_segmentation.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_port_segmentation.py",
+      "source_sha256": "33dd8f4e415e7d0324bd604c8e1a0d1f52807c10c64d51c580d8faf0b24c29e8",
+      "sha256": "33dd8f4e415e7d0324bd604c8e1a0d1f52807c10c64d51c580d8faf0b24c29e8"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/tests/test_bound_input_equivalence.py",
+      "canonical": "02_coding/pipeline/gfw_release/tests/test_bound_input_equivalence.py",
+      "source_sha256": "2a09b5a5b804cdb2bb43fb61c3057f137eb0e614b8712bcba5cbf47fff451e85",
+      "sha256": "2a09b5a5b804cdb2bb43fb61c3057f137eb0e614b8712bcba5cbf47fff451e85"
+    },
+    {
+      "source": "02_coding/experiments/E007_2025_gfw_robustness_validation/90_rebuild_trimmed_voyages.py",
+      "source_function": "weather",
+      "canonical": "02_coding/pipeline/gfw_release/track_weather_adapter.py",
+      "source_sha256": "a93b4d936ac4d733c1e4b7a7447c679671f08c738db42241a5490a408dfc7e04",
+      "sha256": "e0397abf610772acab6b9fce518633a7b2e4a4a796f114cb855abf0739373dc0"
+    }
+  ],
+  "stage_entries": {
+    "10_ingest_data/40_build_gfw_presence_shards/10_build_shards.py": "100_build_gfw_unified_shards.py",
+    "20_clean_and_harmonize/30_clean_gfw_presence/10_clean_shards.py": "110_run_gfw_cleaning.py",
+    "30_build_analysis_sample/60_build_gfw_voyages/10_identify_port_calls.py": "200_rebuild_port_segmentation.py",
+    "30_build_analysis_sample/60_build_gfw_voyages/20_build_voyages.py": "210_rebuild_segmented_voyage_base.py",
+    "40_construct_variables/70_construct_gfw_weather/10_build_tracks_and_weather.py": "220_rebuild_segmented_weather.py",
+    "50_run_main_analysis/20_build_gfw_release/10_build_release.py": "240_build_segmented_release.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/10_validate_release.py": "260_validate_gfw_release.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/20_compare_positions.py": "20_compare_real_gaps.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/30_summarize_positions.py": "25_summarize_real_gaps.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/40_compare_weather.py": "30_compare_real_gap_weather.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/50_summarize_weather.py": "35_summarize_real_gap_weather.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/60_compare_segmentation.py": "60_compare_voyage_segmentation.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/70_validate_intervals.py": "130_validate_exposure_intervals.py",
+    "80_package_final_outputs/30_package_gfw_release/10_document_release.py": "270_document_gfw_release.py",
+    "80_package_final_outputs/30_package_gfw_release/20_build_supplements.py": "255_refresh_segmented_supplements.py",
+    "80_package_final_outputs/30_package_gfw_release/30_package_validation.py": "275_package_one_cell_validation.py",
+    "60_run_validation_and_robustness/30_validate_gfw_release/35_check_time_tolerance.py": "27_containment_tolerance.py"
+  },
+  "method_changes": false,
+  "legacy_paths": "Relative symlinks to the single canonical implementation; historical source hashes remain at the source commit.",
+  "binding_changes": [
+    "Release and validation defaults now select the adopted one-cell population; explicit historical environment overrides remain supported.",
+    "Historical internal-comparison helpers bind their own configuration directory."
+  ]
+}

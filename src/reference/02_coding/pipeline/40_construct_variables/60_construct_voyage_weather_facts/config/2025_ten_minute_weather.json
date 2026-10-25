@@ -1,0 +1,16 @@
+{
+  "wave_directory": "02_coding/data/frozen_inputs/external/era5_2025",
+  "wave_filename_template": "era5_p9_template_domain_swh_wind10m_2025_{month:02d}_monthly_wave.nc",
+  "ibtracs_path": "02_coding/data/frozen_inputs/external/ibtracs/2026-09-06_v04r01/ibtracs.last3years.list.v04r01.csv",
+  "ibtracs_sha256": "2f5d6f7c0eeab83ec23e306c9fcece5ddd85734e6ac36ae90cbc7624d527d771",
+  "ibtracs_calendar_coverage_audit": "02_coding/data/frozen_inputs/external/ibtracs/2026-09-06_v04r01/coverage_audit.json",
+  "ibtracs_full_year_coverage_verified": true,
+  "ibtracs_best_track_final": false,
+  "maximum_wet_cell_snap_km": 117.94,
+  "maximum_tc_fix_gap_hours": 3.0,
+  "tc_radius_km": [
+    300.0,
+    500.0
+  ],
+  "year": 2025
+}

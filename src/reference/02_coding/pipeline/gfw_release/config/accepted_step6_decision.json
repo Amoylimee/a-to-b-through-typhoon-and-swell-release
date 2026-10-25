@@ -1,0 +1,62 @@
+{
+  "year": 2025,
+  "population": "E006_gfw_presence_2025",
+  "authority": "User instructions in the 2026-10-07 session",
+  "format": "annual_directed_city_pair_x_shiptype",
+  "format_context": "User accepted the immediately preceding recommendation to reuse the annual E002 format.",
+  "holdout_max_observation_gap_seconds": 3600,
+  "holdout_durations_hours": [
+    2,
+    4,
+    6,
+    12,
+    24
+  ],
+  "holdout_context_hours": 1,
+  "holdout_segments_per_stratum": 500,
+  "holdout_additional_tc500_segments": 500,
+  "seed": 20260923,
+  "bootstrap_replicates": 1000,
+  "minimum_voyages": 5,
+  "minimum_ships_for_sampling_interval": 3,
+  "speed_cap_knots": 25,
+  "port_space_tolerance_km": 0,
+  "port_time_tolerance_hours": 1,
+  "port_tolerance_source": "Accepted E002 method, Contract T014/T015; all endpoint coordinates and conflict checks recomputed from GFW inputs.",
+  "weather_run": "02_coding/.runs/2026-10-11_1907_E007-one-cell-weather",
+  "weather_validation_sha256": "e91f5eac8070ee410bcb86a04d9b64fc63a18b4f9681c9747c879576066d5ffe",
+  "annual_weather_sha256": "fca3093597204d0c06f2e5101cc78632ce96795c0fa8f49e6504648afff524b4",
+  "gfw_city_table": "02_coding/.runs/2026-10-11_1907_E007-one-cell-voyage-base/input_view/results/support/city_snap_table_2025.csv",
+  "gfw_city_table_sha256": "e739bef3df5ecc77cc3deb2574be30ee8b458f09167302556f4349131285029b",
+  "required_candidates": 1111800,
+  "required_shards": 64,
+  "network_requests_authorized": false,
+  "formal_product_modification_authorized": false,
+  "adoption_authorized": false,
+  "step7_authorized": false,
+  "push_authorized": false,
+  "merge_authorized": false,
+  "voyage_set": "E007 corrected segmentation, one-cell short-stop allowance, unresolved cases quarantined",
+  "voyage_set_rule": {
+    "path": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/port_segmentation_revision.json",
+    "bytes": 3615,
+    "sha256": "b7cb5fa128b7f2fe221dba5e3ff93be3772cdfd77c815225299519ab7d4f4c60"
+  },
+  "based_on_step6_decision": {
+    "path": "02_coding/experiments/E006_2025_gfw_presence_release/config/step6_release_authorization.json",
+    "bytes": 1931,
+    "sha256": "02ce1488f5dcecb828fa9bf30881da126ab2a0c87e4b1b5616ac8ee2910fb931"
+  },
+  "expected_counts": {
+    "candidates": 1111800,
+    "weather_rows": 140832051,
+    "combinations": 227742,
+    "release_combinations": 39793,
+    "release_voyages": 826279
+  },
+  "short_stop_revision": {
+    "path": "02_coding/experiments/E007_2025_gfw_robustness_validation/config/short_stop_allowance_revision.json",
+    "bytes": 2262,
+    "sha256": "e4fa034a67fc3717dfdb232ec238b302241f77b130d49296c9ac1a881d516813"
+  }
+}

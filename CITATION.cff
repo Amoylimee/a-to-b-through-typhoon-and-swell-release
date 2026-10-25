@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "This repository contains the scientific code. Cite its fixed version, the separately archived dataset and the accompanying article once their identifiers are assigned."
+title: "Code for Global tropical cyclone and wave exposure across maritime origin-destination pairs in 2025"
+type: software
+license: MIT
+repository-code: "https://github.com/Amoylimee/a-to-b-through-typhoon-and-swell-release"
+authors:
+  - family-names: Chen
+    given-names: Jiajing
+  - family-names: Chen
+    given-names: Xiaodong
+  - family-names: Lei
+    given-names: Haowen
+  - family-names: Li
+    given-names: Geng
+  - family-names: Chan
+    given-names: Keith Jin Deng
+  - family-names: Chen
+    given-names: Shi
+  - family-names: Chan
+    given-names: Jimmy W. M.
+  - family-names: Lau
+    given-names: Alexis K. H.

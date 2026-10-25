@@ -1,0 +1,13 @@
+# Self-contained scientific tests and monthly exporter (Python >= 3.10).
+# See environment.yml and docs/REPRODUCTION.md for upstream stage dependencies.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+pyarrow>=12
+xarray>=2023.1
+netCDF4>=1.6
+shapely>=2,<3
+networkx>=3,<4
+PyYAML>=6,<7
+scikit-learn>=1.2,<2
+pytest>=7,<10

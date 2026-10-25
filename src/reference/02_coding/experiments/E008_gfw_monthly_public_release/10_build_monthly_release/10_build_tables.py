@@ -1,0 +1,1 @@
+../../../pipeline/gfw_monthly_release/10_build_monthly_release/10_build_tables.py

@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+.env
+.env.*
+!*.example
+build/
+inputs/
+src/reference/data/
+src/reference/.runs/
+src/reference/outputs/
+src/reference/02_coding/data/
+src/reference/02_coding/.runs/
+src/reference/02_coding/outputs/
+
+# Final datasets and generated artifacts live outside the code repository.
+/data/
+/outputs/
+/datasets/
+*.parquet
+*.nc
+*.nc4
+*.grib
+*.grib2

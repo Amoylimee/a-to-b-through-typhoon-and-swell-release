@@ -1,0 +1,81 @@
+{
+  "analysis_year": 2021,
+  "approved_branch": "feature/p1x-first-passage-v2",
+  "coordinate_crs": "EPSG:4326",
+  "coordinate_source_precedence": [
+    {
+      "path": "data/named_anchorages/named_anchorages_v2_20201104.csv",
+      "sha256": "0e0bf8772f1aa26c06353240a7089c9aeeb5199aef4e81c1a3506df8c8001d94"
+    },
+    {
+      "path": "data/named_anchorages/named_anchorages_v2_20221206.csv",
+      "sha256": "cdd2d1d830ec338505b6d2f8bdcfb5016eef778aae1f8bc71d0c02235b0de006"
+    }
+  ],
+  "c0a_inputs": {
+    "output_manifest": {
+      "path": "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/output_manifest.json",
+      "sha256": "376e4487bdfde7b00d21f655f49e7a96e3c5b3a80379e06186059b7493560157"
+    },
+    "ordered_port_calls": {
+      "path": "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/ordered_port_calls_2021.feather",
+      "sha256": "f880d04caa999fb7f5fdffbd53a117107c6aacaef50093bb7b762549ea5eab72"
+    },
+    "passage_pair_manifest": {
+      "path": "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/passage_pair_manifest_2021.csv",
+      "sha256": "1a3e7c4c80b3b53e1bccf1b43d270327512964bd7cb54c255c76e5a0a25743af"
+    }
+  },
+  "lineage_inputs": {
+    "reviewed_v3_mapping": {
+      "path": "data/named_anchorages/anchorage_to_analytical_city_candidate_v3.csv",
+      "sha256": "a06ef572b8a3689b3e5b1ea418810bc5cd3fa59531b69ca7f2ebdcd99ef3a030"
+    }
+  },
+  "coordinate_role_overrides": [
+    {
+      "city_id": "VEN:PUERTO ORDAZ",
+      "mode": "separate_port_and_gateway",
+      "port_anchorage_ids": [
+        "8dcbedfb",
+        "8dcbedfd",
+        "8dcbedff",
+        "8dcbee03",
+        "8dcbee07",
+        "8dcbf1c3",
+        "8dcbf1cb",
+        "8dcbf1e7"
+      ],
+      "routing_gateway_anchorage_ids": [
+        "8db4bf8f",
+        "8db4bf95",
+        "8db4bf97",
+        "8db4bf9b",
+        "8db4bfa1",
+        "8db4bfa5",
+        "8db4bfbb",
+        "8db4bfbd",
+        "8db4bfbf"
+      ],
+      "reason": "Puerto Ordaz is one analytical city with a physical Orinoco river port and a separate maritime pilot gateway.",
+      "evidence": "The 2021 west cluster matches the Puerto Ordaz port area; the east cluster lies within 2.64 km of the published Lighted Buoy 0.1 pilot-boarding position. User approved the role separation on 2026-07-26 HKT.",
+      "reference": "NGA Pub. 148 Sailing Directions (Enroute), Caribbean Sea Volume II"
+    }
+  ],
+  "p8x_audit_input": {
+    "path": "data/P8x_canonical_corridor_network/p0_build_city_coordinates/city_coords.csv",
+    "sha256": "7c83b7792976c91970f359c8675c382e4274cc8eba3ea4f01598c4d5c20cb755",
+    "production_use_prohibited": true
+  },
+  "searoute": {
+    "version": "1.6.0",
+    "marnet_sha256": "3622fff283e71b940ba5d58280b07c5cb2e95959ffb48f647b39b500b6c50ea3"
+  },
+  "coordinate_weight": {
+    "field": "n_events",
+    "meaning": "retained 2021 OD endpoint source records represented by each ordered commercial call"
+  },
+  "snap_distance_method": "WGS84 haversine with mean Earth radius 6371.0088 km",
+  "snap_review_threshold_km": 50.0,
+  "coordinate_spread_review_threshold_deg": 2.0
+}

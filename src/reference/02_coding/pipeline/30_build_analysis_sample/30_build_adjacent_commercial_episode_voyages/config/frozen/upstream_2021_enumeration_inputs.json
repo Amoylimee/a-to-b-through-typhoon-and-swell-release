@@ -1,0 +1,65 @@
+{
+  "source_role": "historical_frozen_inputs_only",
+  "source_candidate_enumeration_mode": "fanout_first_passage",
+  "analysis_year": 2021,
+  "expected_analysis_vessels": 20134,
+  "expected_city_episodes": 1201049,
+  "expected_pair_count": 1178860,
+  "expected_candidate_count": 8801929,
+  "worker_count": 16,
+  "task_count": 16,
+  "time_identity_tolerance_hours": 1e-06,
+  "period_windows": [
+    {
+      "period_id": "2021_full_year",
+      "start": "2021-01-01T00:00:00Z",
+      "end": "2022-01-01T00:00:00Z"
+    }
+  ],
+  "input_sha256": {
+    "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/ordered_city_episodes_2021.feather": "d30a69893fe86853b83629df7493dcf460df7176bbe6624406a7d02a941b6774",
+    "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/ordered_port_calls_2021.feather": "f880d04caa999fb7f5fdffbd53a117107c6aacaef50093bb7b762549ea5eab72",
+    "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/endpoint_events_2021.feather": "61737cc1e030b39336784bdd45d72c00c30a6db045d8108b78ea3212e9dd0e4e",
+    "data/processed/build_multicall_first_passage_voyages/main/provenance/frozen_2021_city_episodes/passage_pair_manifest_2021.csv": "1a3e7c4c80b3b53e1bccf1b43d270327512964bd7cb54c255c76e5a0a25743af",
+    "data/processed/build_multicall_first_passage_voyages/main/support/frozen_2021/yardstick_table_2021.feather": "9a9a7b6a61b1954c74708934aafd8389c353e45ee06c34ffe6b7039d25d8ca31"
+  },
+  "liner_proxy_types": [
+    "CONTAINER SHIP",
+    "REEFER",
+    "RO-RO CARGO",
+    "RO-RO/CONTAINER CARRIER",
+    "VEHICLES CARRIER",
+    "RAIL/VEHICLES CARRIER"
+  ],
+  "tramp_proxy_types": [
+    "AGGREGATES CARRIER",
+    "ASPHALT/BITUMEN TANKER",
+    "BULK CARRIER",
+    "CEMENT CARRIER",
+    "CHEMICAL TANKER",
+    "CRUDE OIL TANKER",
+    "EDIBLE OIL TANKER",
+    "FRUIT JUICE TANKER",
+    "GENERAL CARGO",
+    "HEAVY LIFT VESSEL",
+    "HEAVY LOAD CARRIER",
+    "LIVESTOCK CARRIER",
+    "LNG TANKER",
+    "LPG TANKER",
+    "LPG/CHEMICAL TANKER",
+    "OBO CARRIER",
+    "OIL PRODUCTS TANKER",
+    "OIL/CHEMICAL TANKER",
+    "ORE CARRIER",
+    "SELF DISCHARGING BULK CARRIER",
+    "TIMBER CARRIER",
+    "WOOD CHIPS CARRIER"
+  ],
+  "dwell_histogram": {
+    "minimum_hours": 0.25,
+    "maximum_days": 60.0,
+    "log_bin_count": 120,
+    "candidate_search_minimum_days": 0.5,
+    "candidate_search_maximum_days": 3.0
+  }
+}

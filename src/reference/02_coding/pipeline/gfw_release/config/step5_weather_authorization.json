@@ -1,0 +1,22 @@
+{
+  "decision": "approved_E006_2025_weather_candidate",
+  "authority": "User instruction in the 2026-10-07 session",
+  "year": 2025,
+  "operations": [
+    "weather_matching"
+  ],
+  "baseline": "02_coding/.runs/2026-10-06_2341_E006-gfw-ten-minute-tracks",
+  "baseline_execution_sha256": "22e2955064a5e82a673535f6e285f993aecae0657a3cdc07d0d8b949cd97946a",
+  "validation": "02_coding/.runs/2026-10-07_0311_E006-gfw-ten-minute-validation/validation.json",
+  "baseline_validation_sha256": "f405c97b123e0cbb978f6fe13d742845dccc13400abb2cec0a9de319fcb21430",
+  "weather_config_sha256": "dece34f00777c390df2389c1b6601d86b8910f96ebedb0a21a8a825307a98302",
+  "required_shards": 64,
+  "required_candidates": 1230622,
+  "required_grid_rows": 982073126,
+  "new_network_requests_approved": false,
+  "products_modified": false,
+  "adoption_authorized": false,
+  "step6_authorized": false,
+  "push_authorized": false,
+  "merge_authorized": false
+}

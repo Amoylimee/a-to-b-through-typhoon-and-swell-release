@@ -1,0 +1,372 @@
+{
+  "schema": "E001 frozen input registry, 2025 only",
+  "written_by": "Supreme Agent; user-authorized independent-data materialization, 2026-09-08",
+  "authority": "CONTRACT.md sections 2 and 3; 20_PLAN.md stage 1",
+  "notes": [
+    "Every current registered input is an owned regular file in this repository. Source paths remain provenance, not runtime dependencies.",
+    "Legacy group and destination names are preserved for compatibility; groups formerly named bind now use method copy and full SHA-256 verification.",
+    "Historical reports are immutable. The current ownership ledger supersedes their deferred hash and external binding states.",
+    "Only existing registered assets were copied. This does not acquire missing L3 data, run q-trim, open CP1/CP2, or start the independent 2024 dataset.",
+    "Public package adaptation: four unused historical acquisition-cache and pre-ingest aliases are omitted. The complete original registry remains in the source research archive identified by source_manifest.json."
+  ],
+  "source_repos": {
+    "code": {
+      "root": "<upstream-code-repository>/jiachine-learning/02_coding",
+      "pinned_commit": "fd3209cf1566cce8a511339b0aa998b8739eac1f",
+      "under_git": true
+    },
+    "data": {
+      "root": "<upstream-data-repository>/06_coding",
+      "under_git": false
+    },
+    "weather": {
+      "root": "<upstream-weather-repository>/06_coding",
+      "under_git": false,
+      "registration_status": "Registered provenance of the already-frozen 2025 ERA5 monthly wave inputs; current reads use local copies."
+    },
+    "current": {
+      "root": "02_coding",
+      "under_git": true,
+      "pinned_commit": "5e0670a3494ed1016c55e59aff1fc574c7b3c9a5",
+      "role": "This repository reviewed pretrim snapshot, not an external source."
+    }
+  },
+  "groups": [
+    {
+      "group": "10_pretrim_2025",
+      "layer": "30d refit input",
+      "priority": 1,
+      "why": "CONTRACT section 2 names these 16 parts for priority freezing; they live only under the source .runs directory",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/intermediate/2025/filters/c4_pretrim_2025",
+          "dst": "frozen_inputs/pretrim_2025/c4_pretrim_2025"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/intermediate/2025/filters/c2_manifest.json",
+          "dst": "frozen_inputs/pretrim_2025/c2_manifest.json"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/intermediate/2025/filters/c3_30_day_manifest_2025.json",
+          "dst": "frozen_inputs/pretrim_2025/c3_30_day_manifest_2025.json"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/intermediate/2025/filters/transition_yardstick.feather",
+          "dst": "frozen_inputs/pretrim_2025/transition_yardstick.feather"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/intermediate/2025/filters/c3_retained_2025",
+          "dst": "frozen_inputs/pretrim_2025/c3_retained_2025"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/manifests",
+          "dst": "frozen_inputs/pretrim_2025/manifests"
+        }
+      ]
+    },
+    {
+      "group": "30_roster_2025",
+      "layer": "10a",
+      "priority": 3,
+      "why": "Offline roster replay must reproduce the frozen funnel without any specs API request",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "data",
+      "items": [
+        {
+          "src": "data/P1_prepare_od_panel/p0_identify_international_mmsi/2025",
+          "dst": "frozen_inputs/roster_2025/p0"
+        },
+        {
+          "src": "data/P1_prepare_od_panel/p1_fetch_vessel_specs_by_mmsi/2025/full",
+          "dst": "frozen_inputs/roster_2025/p1_full",
+          "exclude_dirs": [
+            "raw_batches",
+            "batch_specs"
+          ]
+        },
+        {
+          "src": "data/P1_prepare_od_panel/p2_define_ship_type_samples/2025",
+          "dst": "frozen_inputs/roster_2025/p2"
+        }
+      ]
+    },
+    {
+      "group": "40_gfw_od_2025",
+      "layer": "10a",
+      "priority": 4,
+      "why": "The only input to p0; the roster replay reads these twelve monthly files",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "data",
+      "items": [
+        {
+          "src": "data/od/2025",
+          "dst": "frozen_inputs/gfw_od_2025"
+        }
+      ]
+    },
+    {
+      "group": "50_anchorage_reference",
+      "layer": "10a and 30a",
+      "priority": 5,
+      "why": "p0 derives both-end countries from the iso3 column of these three catalogs (finding F8). The dock-adjusted inclusive catalog is the frozen port-call reference.",
+      "method": "copy",
+      "hash_policy": "full",
+      "items": [
+        {
+          "source_repo": "data",
+          "src": "data/named_anchorages/named_anchorages_v2_20201104.csv",
+          "dst": "frozen_inputs/named_anchorages/named_anchorages_v2_20201104.csv"
+        },
+        {
+          "source_repo": "data",
+          "src": "data/named_anchorages/named_anchorages_v2_20221206.csv",
+          "dst": "frozen_inputs/named_anchorages/named_anchorages_v2_20221206.csv"
+        },
+        {
+          "source_repo": "data",
+          "src": "data/named_anchorages/named_anchorages_v2_pipe_v3_202601.csv",
+          "dst": "frozen_inputs/named_anchorages/named_anchorages_v2_pipe_v3_202601.csv"
+        },
+        {
+          "source_repo": "code",
+          "src": "data/processed/products/anchorage_catalog",
+          "dst": "frozen_inputs/anchorage_catalog"
+        }
+      ]
+    },
+    {
+      "group": "60_external_assets",
+      "layer": "40e and 40f",
+      "priority": 6,
+      "why": "IBTrACS and the GSHHG mask are named in CONTRACT section 3; the ERA5 wave fields are the weather input and live in an unregistered third source repository (finding F4)",
+      "method": "copy",
+      "hash_policy": "full",
+      "items": [
+        {
+          "source_repo": "code",
+          "src": "data/external/ibtracs/2026-09-06_v04r01",
+          "dst": "frozen_inputs/external/ibtracs/2026-09-06_v04r01"
+        },
+        {
+          "source_repo": "code",
+          "src": "data/external/gshhg/ocean_mask_01m.npy",
+          "dst": "frozen_inputs/external/gshhg/ocean_mask_01m.npy"
+        },
+        {
+          "source_repo": "weather",
+          "src": "data/climate/era5_p9_template_domain_single_levels/netcdf",
+          "dst": "frozen_inputs/external/era5_2025",
+          "include_glob": "era5_p9_template_domain_swh_wind10m_2025_*_monthly_wave.nc"
+        }
+      ]
+    },
+    {
+      "group": "70_runs_resident_stage30_40",
+      "layer": "30b/30c generic source support",
+      "priority": 7,
+      "why": "Retain only the generic OD and adjacent-commercial-voyage source artifacts; retired Suez/strict-route/reachability runs are not current pipeline inputs",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": ".runs/2026-08-24_0352_E030-stage30-20-od-input",
+          "dst": "frozen_inputs/runs/od_input_2025"
+        },
+        {
+          "src": ".runs/2026-08-24_1156_E030-ordered-voyage-publication-buffered",
+          "dst": "frozen_inputs/runs/voyage_publication_buffered"
+        }
+      ]
+    },
+    {
+      "group": "80_runs_resident_weather_input",
+      "layer": "40f dependency",
+      "priority": 8,
+      "why": "The accepted 2025 weather run reads its AIS buckets from this .runs path; it was never promoted to a product (finding F3)",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": ".runs/2026-09-05_0118_E031_leg-ais-coverage-2025",
+          "dst": "frozen_inputs/runs/leg_ais_coverage_2025"
+        }
+      ]
+    },
+    {
+      "group": "90_runs_resident_anchor_inputs",
+      "layer": "40d, conditional on CP1",
+      "priority": 9,
+      "why": "Anchor targets and dark hours are small and .runs-resident; freezing them now costs little and does not start any anchor work",
+      "conditional": "CP1 decides whether these are ever used; copying them is preparation, not adoption",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": ".runs/2026-09-05_0129_E032_postbreak-presence-dark-hours-2025",
+          "dst": "frozen_inputs/runs/dark_hours_2025"
+        },
+        {
+          "src": ".runs/2026-09-05_0154_E032_2025-anchor-target-full",
+          "dst": "frozen_inputs/runs/anchor_target_2025"
+        }
+      ]
+    },
+    {
+      "group": "A0_bind_adopted_products",
+      "layer": "4 to 13, 17, 18",
+      "priority": 10,
+      "why": "Independent owned snapshots of inputs used by the route-free 2025 build. Retired ordered Suez/Bab and voyage route-facts products are not current runtime dependencies.",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": "data/processed/products/unified_ais_shards/2025",
+          "dst": "legacy_inputs/unified_ais_shards_2025"
+        },
+        {
+          "src": "data/processed/products/cleaned_ais/2025",
+          "dst": "legacy_inputs/cleaned_ais_2025"
+        },
+        {
+          "src": "data/processed/products/port_calls_and_legs/2025",
+          "dst": "legacy_inputs/port_calls_and_legs_2025"
+        },
+        {
+          "src": "data/processed/products/our_od/2025",
+          "dst": "legacy_inputs/our_od_2025"
+        },
+        {
+          "src": "data/processed/products/adjacent_commercial_episode_voyages/2025",
+          "dst": "legacy_inputs/adjacent_commercial_episode_voyages_2025"
+        },
+        {
+          "src": "data/processed/products/vessel_universe",
+          "dst": "legacy_inputs/vessel_universe"
+        },
+        {
+          "src": "data/processed/products/companion_tracks/2025",
+          "dst": "legacy_inputs/companion_tracks_2025"
+        },
+        {
+          "src": "data/processed/products/voyage_weather_facts/2025",
+          "dst": "legacy_inputs/voyage_weather_facts_2025"
+        }
+      ],
+      "previous_method": "bind"
+    },
+    {
+      "group": "C0_bind_deferred_hash",
+      "layer": "1 and 40d",
+      "priority": 12,
+      "why": "Historical local observation archive used by the optional GFW cross-check; acquisition and raw-response recovery are outside the public prepared-input workflow.",
+      "method": "copy",
+      "hash_policy": "full",
+      "items": [
+        {
+          "source_repo": "code",
+          "src": ".runs/2026-09-05_1351_E032_annual-six-hour-acquisition-2025",
+          "dst": "legacy_inputs/gfw_presence_responses_2025",
+          "note": "234.34 GB; conditional on CP1. The source acceptance record states the ordinary raw responses were never all re-hashed (finding F12), so this repository cannot inherit a hash check."
+        }
+      ],
+      "previous_method": "bind",
+      "previous_hash_policy": "inventory"
+    },
+    {
+      "group": "D0_stage30_city_and_distance_support",
+      "layer": "30b/30c L2 pretrim dependency",
+      "priority": 13,
+      "why": "Actual frozen mapping, city-node and distance-cache inputs consumed by the unchanged 30c functions; historical reference reuse does not run other years.",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": "data/legacy_inputs/anchorage_to_analytical_city_candidate_v3.csv",
+          "dst": "frozen_inputs/stage30_support_2025/data/legacy_inputs/anchorage_to_analytical_city_candidate_v3.csv"
+        },
+        {
+          "src": "data/processed/build_multicall_first_passage_voyages/main/support/frozen_2021/city_snap_table_2021.csv",
+          "dst": "frozen_inputs/stage30_support_2025/data/processed/build_multicall_first_passage_voyages/main/support/frozen_2021/city_snap_table_2021.csv"
+        },
+        {
+          "src": "data/processed/build_multicall_first_passage_voyages/main/support/endpoint_2025/city_snap_table_c5_2025.csv",
+          "dst": "frozen_inputs/stage30_support_2025/data/processed/build_multicall_first_passage_voyages/main/support/endpoint_2025/city_snap_table_c5_2025.csv"
+        },
+        {
+          "src": "data/processed/build_multicall_first_passage_voyages/main/support/frozen_2021/node_pair_routes_2021.feather",
+          "dst": "frozen_inputs/stage30_support_2025/data/processed/build_multicall_first_passage_voyages/main/support/frozen_2021/node_pair_routes_2021.feather"
+        },
+        {
+          "src": "data/processed/build_multicall_first_passage_voyages/main/support/endpoint_2025/new_node_pair_routes_2025.feather",
+          "dst": "frozen_inputs/stage30_support_2025/data/processed/build_multicall_first_passage_voyages/main/support/endpoint_2025/new_node_pair_routes_2025.feather"
+        }
+      ]
+    },
+    {
+      "group": "D1_L1_complete_city_snapshot",
+      "layer": "30c unified L1 L2 reference replay",
+      "priority": 14,
+      "why": "User-approved inheritance of the exact L1 city snapshot; preserve existing city cells and only append 35 L2 cities.",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/support/city_snap_table_2021_2025.csv",
+          "dst": "frozen_inputs/stage30_unified_2025/city_snap_table_2021_2025.csv",
+          "sha256": "fdaaa88fb046f024fd68c6199da33b70a4b724c9993ed82875c3e7e2518e3496"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/support/city_snap_summary.json",
+          "dst": "frozen_inputs/stage30_unified_2025/city_snap_summary.json",
+          "sha256": "882fd1f3128f210141d50432b760c80d16860b7baad8c9a1950f5eb3af011514"
+        },
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/support/2025/yardstick_table_2025.feather",
+          "dst": "frozen_inputs/stage30_unified_2025/yardstick_table_2025.feather",
+          "sha256": "4ad493e3794c3e98a155613a5e608b9a7a830be76f0e5ba4544a0ea892a6f5b9"
+        }
+      ]
+    },
+    {
+      "group": "E0_L1_original_c3_decisions",
+      "layer": "L1 original C3 regression and provenance",
+      "priority": 15,
+      "why": "Preserve all original L1 C3 decisions locally for independent replay and review.",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "code",
+      "items": [
+        {
+          "src": ".runs/2026-08-24_0357_E030-stage30-20-five-year-rebuild/intermediate/2025/filters/c3_decisions_2025",
+          "dst": "frozen_inputs/pretrim_2025/c3_decisions_2025"
+        }
+      ]
+    },
+    {
+      "group": "F0_current_reviewed_pretrim",
+      "layer": "2025 L1/L2 reviewed pretrim; no L3 and no annual qtrim",
+      "priority": 16,
+      "why": "Durable owned copy of the reviewed Golfito correction, separate from temporary runs.",
+      "method": "copy",
+      "hash_policy": "full",
+      "source_repo": "current",
+      "items": [
+        {
+          "src": ".runs/2026-09-08_1727_E001_Golfito-coast-correction/input_version",
+          "dst": "frozen_inputs/e001_2025_pretrim_golfito_corrected"
+        }
+      ]
+    }
+  ]
+}

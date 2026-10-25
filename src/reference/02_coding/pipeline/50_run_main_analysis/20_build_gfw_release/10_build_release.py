@@ -1,0 +1,1 @@
+../../gfw_release/240_build_segmented_release.py

@@ -1,0 +1,46 @@
+{
+  "revision": "E007 step-6 rule revision",
+  "date_local": "2026-10-09",
+  "timezone": "Asia/Hong_Kong",
+  "applies_to": "E006 step 6 (missing-position bounds, wave estimand, release assembly); steps 1-5 unchanged",
+  "evidence": "02_coding/outputs/2026-10-08_2331_E007-robustness-review/00_README.md (items 2 and 5)",
+  "decisions": {
+    "fix_time_tolerance": {
+      "question": "When bounding unknown positions, widen each known GFW end by its +/-30 min time-stamp uncertainty?",
+      "choice": "A: widen. The known position before an unknown hour is treated as up to 30 min earlier and the one after as up to 30 min later, matching the step-4 speed check (record interval + 1 h). Port endpoints keep their existing 1 h tolerance."
+    },
+    "wave_point_estimand": {
+      "question": "Which value is the primary mean significant wave height?",
+      "choice": "A: primary = mean over wave-matched hours (no clipping) with its ship-cluster sampling interval, published together with the lowest/highest possible means. The clipped value is kept as a secondary field with a flag and the size of the shift; support hours, support coverage and unsupported hours are added.",
+      "coauthor_suggestion": {
+        "file": "jiachine-learning/from-co-author/SD-261009.zip",
+        "sha256": "d0751374e01581f5f79ebe2c28f3b31d454359efc54ac62a585d8425ddcfcc5a",
+        "items": "AUTHOR_ACTIONS.md A06 (wave fields) and A07 (formula 8); consistent with choice A"
+      }
+    },
+    "disconnected_water": {
+      "question": "Connect short gaps between map-disconnected water bodies (canal lakes, harbour basins) with a straight line?",
+      "choice": "No change: these hours (0.13% of voyage time) stay unresolved, remain in every denominator, and keep their reachable-area bounds."
+    }
+  },
+  "fix_time_tolerance_hours": 0.5,
+  "port_time_tolerance_hours": 1,
+  "wave_point_estimand": "matched_mean",
+  "disconnected_water": "unchanged_unresolved",
+  "unchanged": [
+    "speed_cap_knots 25",
+    "minimum_voyages 5",
+    "bootstrap B=1000, seed 20260923, >=3 ships",
+    "ERA5/IBTrACS snapshots",
+    "holdout design"
+  ],
+  "not_authorized": [
+    "product adoption",
+    "manuscript edits",
+    "push",
+    "merge",
+    "public upload",
+    "sending files",
+    "network requests"
+  ]
+}

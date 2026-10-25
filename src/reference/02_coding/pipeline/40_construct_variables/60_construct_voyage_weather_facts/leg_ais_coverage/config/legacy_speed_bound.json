@@ -1,0 +1,10 @@
+{
+  "speed_bound": {
+    "p95_margin": 1.25,
+    "floor_kn": 12.0,
+    "ceiling_kn": 25.0,
+    "continuous_fix_max_gap_hours": 4.0,
+    "minimum_intervals": 5
+  },
+  "note": "Legacy dark-hour probe settings copied from the removed route-reachability config; E002 will replace this method with the approved 25 kn bound."
+}

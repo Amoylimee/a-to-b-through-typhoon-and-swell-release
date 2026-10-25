@@ -1,0 +1,1 @@
+../../../pipeline/gfw_monthly_release/tests/test_monthly_release.py
